@@ -29,9 +29,9 @@ count = int(input('How many rap names would you like to create? '))
 parts = int(input('How many parts should the name contain? '))
 # Snippet 6
 # == == == == == == == == == == == == == == == ==
-# COMMENT THIS CODE:here is a counted loop that to generate the total number of rap names
+# COMMENT THIS CODE:here is a counted loop that will generate the total number of rap names
 for i in range(count):
-    # COMMENT THIS CODE:this the accumulator for the name parts/empty list to store information
+    # COMMENT THIS CODE:this the accumulator for the name parts it is an empty list to store input data
     name_parts = []
     # COMMENT THIS CODE:here is for loop that interates through all the parts
     for j in range(parts):
@@ -40,7 +40,7 @@ for i in range(count):
             possible_names[random.randint(0, len(possible_names)-1)])
 # Snippet 7
 # == == == == == == == == == == == == == == == ==
-# COMMENT THIS CODE:this writes the names parts list together
+# COMMENT THIS CODE:this writes the names parts list and joins them together
 outputFile.write(f"{' '.join(name_parts)}\n")
 # COMMENT THIS CODE:this will print the name parts together
 print(f"{' '.join(name_parts)}")
